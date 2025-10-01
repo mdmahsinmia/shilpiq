@@ -146,7 +146,7 @@
                 }
                 coursesData = await response.json();
         communityCourses = localStorage.getItem('communityCourses') ? JSON.parse(localStorage.getItem('communityCourses')) : [];
-        renderCourses('featuredCourses', coursesData.slice(0, 4));
+        renderCourses('featuredCourses', coursesData.slice(0, 6));
 
         renderCourses('communityCourses', communityCourses);
             } catch (error) {
